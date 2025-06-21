@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css" />
+  </head>
+  <body>
+     <div class="main">
+         <div>
+          <input id="inputNum" class="input" type="text" onkeypress="validateString()" readonly placeholder="Enter input">
+         </div>
+         <div class="div-margin">
+              <a class="button" onclick="clr('C')">C</a>
+              <a class="button" onclick="concat('1')">1</a>
+              <a class="button" onclick="concat('2')">2</a>
+              <a class="button" onclick="concat('3')">3</a>
+          </div>
+           <div class="div-margin">
+              <a class="button" onclick="concat('4')">4</a>
+              <a class="button" onclick="concat('5')">5</a>
+              <a class="button" onclick="concat('6')">6</a>
+              <a class="button" onclick="concat('7')">7</a>
+          </div>
+          <div class="div-margin">
+              <a class="button" onclick="concat('8')">8</a>
+              <a class="button" onclick="concat('9')">9</a>
+              <a class="button" onclick="concat('0')">0</a>
+              <a class="button" onclick="concat('00')">00</a>
+
+          </div >
+          <div class="div-margin">
+            <a class="button" onclick="concat('+')">+</a>
+              <a class="button" onclick="concat('-')">-</a>
+              <a class="button" onclick="concat('/')">/</a>
+              <a class="button" onclick="concat('.')">.</a>
+              
+          </div>
+          <div class="div-margin">
+            <a class="button" onclick="concat('*')">*</a>
+        
+            <a class="button" onclick="cancel()">⌫</a>
+          </div>
+          <div>
+              <a class="result" onclick="calculate()">Calculate</a>
+          </div>
+        
+
+         
+      </div>
+
+     <script src="Calculator.js"></script>
+  </body>
+</html>
